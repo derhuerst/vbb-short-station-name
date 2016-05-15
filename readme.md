@@ -2,8 +2,10 @@
 
 **Removes stuff like " (Berlin)" from station names.** Shortens "strasse" to "str.".
 
-- `S Südkreuz Bhf (Berlin)` -> `S Südkreuz`
-- `S Beusselstraße` -> `S Beusselstr.`
+- `S+U Foobar Bhf` -> `S+U Foobar`
+- `S+U Foo Bar (Berlin)` -> `S+U Foo Bar`
+- `S Foo-Straße` -> `S Foo-Str.`
+- `S Foostrasse` -> `S Foostr.`
 
 [![npm version](https://img.shields.io/npm/v/vbb-short-station-name.svg)](https://www.npmjs.com/package/vbb-short-station-name)
 [![build status](https://img.shields.io/travis/derhuerst/vbb-short-station-name.svg)](https://travis-ci.org/derhuerst/vbb-short-station-name)
