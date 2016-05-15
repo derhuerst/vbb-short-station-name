@@ -1,0 +1,13 @@
+{
+	"name":         "vbb-short-station-name",
+	"description":  "Remove noise from VBB station names.",
+	"version":      "0.1.0",
+	"main":         "index.js",
+	"files":        ["index.js"],
+	"keywords":     ["vbb", "stations", "short", "shorten"],
+	"author":       "Jannis R <mail@jannisr.de>",
+	"homepage":     "https://github.com/derhuerst/vbb-short-station-name",
+	"repository":   "derhuerst/vbb-short-station-name",
+	"license":      "ISC",
+	"engines":      {"node": ">=4"}
+}
