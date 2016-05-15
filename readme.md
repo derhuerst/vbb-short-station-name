@@ -6,7 +6,9 @@
 - `S Beusselstraße` -> `S Beusselstr.`
 
 [![npm version](https://img.shields.io/npm/v/vbb-short-station-name.svg)](https://www.npmjs.com/package/vbb-short-station-name)
+[![build status](https://img.shields.io/travis/derhuerst/vbb-short-station-name.svg)](https://travis-ci.org/derhuerst/vbb-short-station-name)
 [![dependency status](https://img.shields.io/david/derhuerst/vbb-short-station-name.svg)](https://david-dm.org/derhuerst/vbb-short-station-name)
+[![dev dependency status](https://img.shields.io/david/dev/derhuerst/vbb-short-station-name.svg)](https://david-dm.org/derhuerst/vbb-short-station-name#info=devDependencies)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/vbb-short-station-name.svg)
 
 
