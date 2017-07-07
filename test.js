@@ -5,9 +5,10 @@ const s = require('./index.js')
 
 
 
-test('removes "Bhf"', (t) => {
-	t.plan(1)
+test('removes "Bhf", but not ", Bhf"', (t) => {
+	t.plan(2)
 	t.strictEqual(s('S+U Foobar Bhf'), 'S+U Foobar')
+	t.strictEqual(s('Foo, Bhf'), 'Foo, Bhf')
 })
 
 test('shortens ", Bahnhof"', (t) => {
