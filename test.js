@@ -26,6 +26,11 @@ test('removes "(Berlin)"', (t) => {
 	t.strictEqual(s('S+U Foo Bar (Berlin)'), 'S+U Foo Bar')
 })
 
+test('removes "(Bln)"', (t) => {
+	t.plan(1)
+	t.strictEqual(s('U Oskar-Helene-Heim (Bln) [Foo]'), 'U Oskar-Helene-Heim [Foo]')
+})
+
 test('shortens "…strasse" to "…str."', (t) => {
 	t.plan(8)
 	t.strictEqual(s('Strasse Foo'),   'Str. Foo')
