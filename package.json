@@ -1,7 +1,7 @@
 {
 	"name":         "vbb-short-station-name",
 	"description":  "Remove noise from VBB station names.",
-	"version":      "0.3.0",
+	"version":      "0.4.0",
 	"main":         "index.js",
 	"files":        ["index.js"],
 	"keywords":     ["vbb", "stations", "short", "shorten"],

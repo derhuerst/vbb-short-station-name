@@ -21,6 +21,18 @@ test('shortens ", Hauptbahnhof"', (t) => {
 	t.strictEqual(s('Schwerin, Hauptbahnhof'), 'Schwerin, Hbf')
 })
 
+test('shortens "U-Bhf." & "S-Bhf."', (t) => {
+	t.plan(2)
+	t.strictEqual(s('U-Bhf. Mehringdamm'), 'U Mehringdamm')
+	t.strictEqual(s('S-Bhf. Bellevue'), 'S Bellevue')
+})
+
+test('shortens "U-Bf." & "S-Bf."', (t) => {
+	t.plan(2)
+	t.strictEqual(s('U-Bf. Mehringdamm'), 'U Mehringdamm')
+	t.strictEqual(s('S-Bf. Bellevue'), 'S Bellevue')
+})
+
 test('removes "(Berlin)"', (t) => {
 	t.plan(1)
 	t.strictEqual(s('S+U Foo Bar (Berlin)'), 'S+U Foo Bar')

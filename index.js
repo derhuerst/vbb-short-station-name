@@ -3,9 +3,10 @@
 const strasse = /(stra(ss|ß)e)[^\w]/i
 const bahnhof = /,\s+bahnhof(?=[^\w])/i
 const hauptbahnhof = /,\s+hauptbahnhof(?=[^\w])/i
-const bhf     = /[^,]\s+bhf(?=[^\w])/i
+const bhf = /[^,]\s+bhf(?=[^\w])/i
 const bln = /[^\w]\(bln\)/i
 const berlin  = /[^\w]\(berlin\)/i
+const xBhf = /\s([us])-bh?f\.?(?=[^\w])/i
 
 const shorten = (n) => {
 	n = ` ${n} ` // regexes work now
@@ -14,6 +15,7 @@ const shorten = (n) => {
 	.replace(hauptbahnhof, ', Hbf')
 	.replace(bln, '')
 	.replace(berlin, '')
+	.replace(xBhf, ' $1')
 
 	// …strasse -> …str.
 	let m = strasse.exec(n)
