@@ -1,5 +1,6 @@
 'use strict'
 
+const berlin2 = /^berlin,\s+/i
 const strasse = /(stra(ss|ß)e)[^\w]/i
 const bahnhof = /,\s+bahnhof(?=[^\w])/i
 const hauptbahnhof = /,\s+hauptbahnhof(?=[^\w])/i
@@ -9,6 +10,7 @@ const berlin  = /[^\w]\(berlin\)/i
 const xBhf = /\s([us])-bh?f\.?(?=[^\w])/i
 
 const shorten = (n) => {
+	n = n.replace(berlin2, '')
 	n = ` ${n} ` // regexes work now
 	.replace(bhf, (m) => m[0])
 	.replace(bahnhof, ', Bhf')
